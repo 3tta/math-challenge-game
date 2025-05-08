@@ -15,7 +15,7 @@ def generate_question():
 
 def play_game(rounds=5, time_limit=5):
     score = 0
-    print("🎯 Welcome to the Math Challenge Game!")
+    print("Welcome to the Math Challenge Game!")
     print(f"You have {time_limit} seconds to answer each question. Ready?\n")
 
     for i in range(rounds):
@@ -26,16 +26,16 @@ def play_game(rounds=5, time_limit=5):
             user_answer = float(input("Your answer: "))
             end_time = time.time()
             if end_time - start_time > time_limit:
-                print("⏱ Time's up!")
+                print("Time's up!")
             elif abs(user_answer - correct_answer) < 0.01:
-                print("✅ Correct answer!\n")
+                print("Correct answer!\n")
                 score += 1
             else:
-                print(f"❌ Incorrect! The correct answer is: {correct_answer}\n")
+                print(f"Incorrect! The correct answer is: {correct_answer}\n")
         except:
-            print("⚠️ Invalid input!\n")
+            print("Invalid input!\n")
 
-    print(f"🎉 Game over! Your score: {score} out of {rounds}")
+    print(f"Game over! Your score: {score} out of {rounds}")
 
 if __name__ == "__main__":
     play_game()

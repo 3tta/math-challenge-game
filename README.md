@@ -8,6 +8,9 @@ Each question has a time limit (5 seconds) to answer.
 - Time limit per question.
 - Final score after the round ends.
 
+## 🛠 Requirements
+- Python 3
+
 ## ✅ How to run
 
 ```bash
